@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>随机图片重定向</title>
+    <script>
+        // 页面加载后立即执行重定向
+        window.onload = function() {
+            // 获取AL.txt文件
+            fetch('AL.txt')
+                .then(response => {
+                    if (!response.ok) throw new Error('无法加载AL.txt');
+                    return response.text();
+                })
+                .then(data => {
+                    // 处理文件内容
+                    const images = data.split('\n')
+                        .map(line => line.trim())
+                        .filter(line => line.length > 0);
+                    
+                    if (images.length === 0) throw new Error('AL.txt中没有图片');
+                    
+                    // 随机选择一张图片
+                    const randomImage = images[Math.floor(Math.random() * images.length)];
+                    
+                    // 立即重定向
+                    window.location.href = 'AL/' + randomImage;
+                })
+                .catch(error => {
+                    // 显示错误信息
+                    document.body.innerHTML = `<p>${error.message}</p>`;
+                });
+        };
+    </script>
+</head>
+<body>
+    <!-- 重定向发生前显示的简单信息
+    <p>正在重定向到随机图片...</p> -->
+</body>
+</html>
