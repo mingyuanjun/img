@@ -189,6 +189,14 @@ Bg_536.png
 Bg_537.png
 Bg_538.png
 Bg_539.png
+Bg_541-1.png
+Bg_542.png
+Bg_543.png
+Bg_544-1.png
+Bg_545.png
+Bg_546.png
+Bg_547-1.png
+Bg_548.png
 Bg_58.png
 Bg_72.png
 Bg_77.png
