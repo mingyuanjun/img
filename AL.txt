@@ -202,6 +202,13 @@ Bg_550.png
 Bg_551-1.png
 Bg_552-1.png
 Bg_553.png
+Bg_554-1.png
+Bg_555-1.png
+Bg_556-1.png
+Bg_557.png
+Bg_558-1.png
+Bg_559.png
+Bg_560-1.png
 Bg_58.png
 Bg_72.png
 Bg_77.png
@@ -270,3 +277,5 @@ Bg_yunxian_cg3.png
 Bg_zhedie_1.png
 Bg_zhuguang_cg2.png
 Bg_zhuguang_cg4.png
+Login_20260401.png
+Login_doa.png
